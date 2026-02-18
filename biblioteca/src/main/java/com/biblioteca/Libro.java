@@ -2,9 +2,13 @@ package com.biblioteca;
 
 public class Libro {
     
+    //Atributos
+    
     private String titulo;
     private String autor;
     private String categoria;
+
+    //Constructor libro
 
     public Libro(String titulo, String autor, String categoria) {
         this.titulo = titulo;
