@@ -14,14 +14,17 @@ public class Usuario {
         this.admin = admin;
     }
 
+    //Getter de nombre
     public String getNombre(){ 
         return nombre;
     }
 
+    //Setter de nombre
     public void setNombre(String nombre){
         this.nombre = nombre;
     }
 
+    //Comprobar contraseña
     public boolean contrasena(String contrasena){
         return this.contrasena == contrasena;
     }
