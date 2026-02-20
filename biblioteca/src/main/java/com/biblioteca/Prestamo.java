@@ -2,31 +2,41 @@ package com.biblioteca;
 
 public class Prestamo {
     private Usuario usuario;
-    private String libro;
+    private Libro libro;
+    private boolean activo;
 
     //Constructor para prestamos
-    public Prestamo(Usuario usuario, String libro){
+    public Prestamo(Usuario usuario, Libro libro){
         this.usuario = usuario;
         this.libro = libro;
+        this.activo = true; 
     }
 
-    //Setter de usuario
+    //Setters y Getters
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
     }
 
-    //Setter de libro
-    public void setLibro(String libro) {
+
+    public void setLibro(Libro libro) {
         this.libro = libro;
     }
 
-    //Getter de usuario
+
     public Usuario getUsuario() {
         return usuario;
     }
 
-    //Getter de libro
-    public String getLibro() {
+
+    public Libro getLibro() {
         return libro;
+    }
+
+    public boolean isActivo(){
+        return activo;
+    }
+    
+    public void devolver(){
+        this.activo = false;
     }
 }
